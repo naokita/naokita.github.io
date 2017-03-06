@@ -50,9 +50,13 @@ hr {
   margin-top: -14px;
 }
 
-/* Smartphone */
-@media screen and (max-width: 960px) {
+/* Smartphones */
+.media-body {
+  display: table;
+}
+/* Tablets and PCs */
+@media screen and (min-width: 768px) {
   .media-body {
-    display: table;
+    display: table-cell;
   }
 }
