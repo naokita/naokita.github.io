@@ -49,3 +49,10 @@ th {
 hr {
   margin-top: -14px;
 }
+
+/* Smartphone */
+@media screen and (max-width: 960px) {
+  .media-body {
+    display: table;
+  }
+}
