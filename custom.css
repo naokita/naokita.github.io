@@ -53,6 +53,7 @@ hr {
 /* Smartphones */
 .media-body {
   display: table;
+  width: 100%;
 }
 /* Tablets and PCs */
 @media screen and (min-width: 768px) {
