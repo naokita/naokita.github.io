@@ -42,6 +42,11 @@ li {
   padding-top: 0.5em;
 }
 
+.authors li {
+  display: inline-block;
+  width: 20%;
+}
+
 th {
   font-family: Tahoma, Geneva, Arial, SunSans-Regular, sans-serif;
   width:60px;
