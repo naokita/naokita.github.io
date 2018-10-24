@@ -93,10 +93,15 @@ hr {
   opacity: 1;
 }
 
+.media {
+  margin-bottom: 1%;
+}
+
 /* Smartphones */
 .media-body {
   display: table;
   width: 100%;
+  margin-left: 1%;
 }
 /* Tablets and PCs */
 @media screen and (min-width: 768px) {
