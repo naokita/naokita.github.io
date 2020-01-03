@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="title" content="Spherical Mapping">
+<title>Spherical Mapping</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+<link href="../../custom.css" rel="stylesheet">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-38577526-1"></script>
+<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-38577526-1');</script>
+</head>
+<body>
+<div class="container">
+
+  <div class="row">
+    <div class="text-center">
+      <h2>Mapping Two-Dimensional Plots to a Spherical Surface using Elliptical Grid Mapping</h2>
+      <ul class="text-center authors" style="font-size: 13pt"> 
+        <li><a href="http://naokita.xyz">Naoki Kita</a><sup>1,2</sup></li>
+        <li>Grégoire Cliquet<sup>3</sup></li>
+        <li><a href="http://www.jaist.ac.jp/~miyata/">Kazunori Miyata</a><sup>1</sup></li>
+      </ul>
+      <ul class="text-center affiliation" style="font-size: 13pt">
+        <li><sup>1</sup> <a href="https://www.jaist.ac.jp/english/">Japan Advanced Institute of Science and Technology</a></li>
+        <li><sup>2</sup> <a href="https://www.tuat.ac.jp/en/">Tokyo University of Agriculture and Technology</a></li>
+        <li><sup>3</sup> <a href="https://www.lecolededesign.com/">L´École de Design Nantes-Atlantique</a></li>
+        <br/><br/>
+        <a href="http://iccvm.org/2020/">CVM 2020</a> 
+        </p>
+      <img src="teaser.png" alt="teaser image" width="100%" style="border: 0">
+  </div>
+
+    <section>
+      <h2>Abstract</h2>
+      <span style="font-size: 13pt">
+        Mapping techniques such as texture mappings are widely used in computer graphics applications. We present a technique that maps 2D plots to a spherical surface. We project 2D plots that are as large as possible while minimizing distortions. To accomplish this projection, we employ elliptical grid mapping, which maps points on a cube to those on a sphere. To determine the largest projection from points on the 2D plot to the cube, we find the largest projection inside an unfolded cube pattern. The unfolded cube is then folded to construct a cube, and the projected 2D plot is mapped to a spherical surface. We consider all unfolding patterns of a cube and determine the optimal pattern for the projection. We apply the proposed mapping to high-dimensional data visualizations. Since the technique maps a plot to a spherical surface surrounding the user, and this covers a wider range of the user's field of view, our mapping provides an immersive experience to users.
+      </span>
+    </section>
+
+    <section>
+        <h2>Results</h2>
+  
+        <div class="thumbnail with-caption">
+          <img src="results/result_sphere.png" alt="Spherical mapping results" width="100%" style="border: 0">
+        </div>
+  
+        <div class="thumbnail with-caption">
+          <img src="results/result_mnist.png" alt="MNIST visualization" width="100%" style="border: 0">
+          <p><strong>Visualization of the MNIST dataset in a VR environment.</strong> (a) Visualization of 2500 digit images by t-SNE. (b) Viewing of (a) in a VR environment. (c) Viewing of (a) mapped on a spherical surface by the proposed method.</p>
+        </div>
+        
+    </section>
+
+    <section>
+      <h2>Links</h2>
+      <span style="font-size: 13pt">
+        <ul>
+          <li><i class="fas fa-link"></i> <a href="https://dx.doi.org/">DOI</a></li>
+        </ul>
+      </span>
+    </section>
+
+    <section>
+      <h2>Acknowledgements</h2>
+      <span style="font-size: 13pt">
+        We thank all reviewers for their helpful comments. This work was supported by JSPS KAKENHI Grant number 19K24338.
+      </span>
+    </section>
+
+    <section>
+      <h2>Bibtex</h2>
+      <span style="font-size: 13pt">
+        <pre>
+        </pre>
+      </span>
+    </section>
+  
+  </div>
+
+</div> <!-- /container -->
+<footer>
+<div class="container">
+<hr>
+<p>Copyright &copy; Naoki Kita All rights reserved (Last updated: Jan 3, 2020)</p>
+</div>
+</footer>
+</body>
+</html>

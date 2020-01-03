@@ -47,6 +47,11 @@ li {
   width: 20%;
 }
 
+.affiliation li {
+  display: inline-block;
+  width: 40%;
+}
+
 th {
   font-family: Tahoma, Geneva, Arial, SunSans-Regular, sans-serif;
   width:60px;
@@ -88,6 +93,40 @@ hr {
 }
 
 .hidden_box input:checked ~ .hidden_show {
+  padding: 10px 0;
+  height: auto;
+  opacity: 1;
+}
+
+.pub_domestic {
+  margin: 2em 0;
+  padding: 0;
+}
+
+.pub_domestic label {
+  padding: 15px;
+  font-weight: bold;
+  border: solid 2px black;
+  cursor :pointer;
+}
+
+.pub_domestic label:hover {
+  background: #efefef;
+}
+
+.pub_domestic input {
+  display: none;
+}
+
+.pub_domestic .pub_dom_show {
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: 0.8s;
+}
+
+.pub_domestic input:checked ~ .pub_dom_show {
   padding: 10px 0;
   height: auto;
   opacity: 1;
