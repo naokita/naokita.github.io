@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="title" content="Spherical Mapping">
+<title>Polyomino Puzzles</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+<link href="../../custom.css" rel="stylesheet">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-38577526-1"></script>
+<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-38577526-1');</script>
+</head>
+<body>
+<div class="container">
+
+  <div class="row">
+    <div class="text-center">
+      <h2>Computational Design of Polyomino Puzzles</h2>
+      <ul class="text-center authors" style="font-size: 13pt">
+        <li><a href="http://naokita.xyz">Naoki Kita</a><sup>†</sup></li>
+        <li>Kazunori Miyata<sup>‡</sup></li>
+      </ul>
+      <ul class="text-center affiliation" style="font-size: 13pt">
+        <li><sup>†</sup> <a href="https://www.tuat.ac.jp/en/">Tokyo University of Agriculture and Technology</a></li>
+        <li><sup>‡</sup> <a href="https://www.jaist.ac.jp/english/">Japan Advanced Institute of Science and Technology</a></li>
+        <br/><br/>
+        <a href="http://www.cgs-network.org/cgi20/">CGI 2020</a>
+        </p>
+      <img src="teaser.png" alt="teaser image" width="100%" style="border: 0">
+  </div>
+
+  <div>
+    <section>
+      <h2>Abstract</h2>
+      <span style="font-size: 13pt">
+        People of all ages enjoy solving geometric puzzles. However, finding suitable puzzles, e.g., puzzles with a moderate level of difficulty or puzzles with intellectually stimulating shapes can be difficult. In addition, designing innovative and appealing puzzles requires demanding effort and, typically, involves many trial and error processes. In this paper, we introduce a computational approach for designing geometric puzzles. Existing approaches employ bottom-up, constructive algorithms to generate puzzle pieces; therefore, intervening in the piece generation procedure is difficult. Differing from existing approaches that generate puzzles automatically or semi-automatically, we propose a top-down, partitioning-based approach, that enables us to control and edit piece shapes. With a subtle modification, the proposed algorithm can be easily extended to both 3D polycube and 2D polyomino puzzle design. To generate a variety of piece shapes, the proposed approach involves a capacity-constrained graph partitioning algorithm combined with polyomino tiling. We demonstrate the versatility of the proposed approach through various example designs, including fabricated puzzles, created using the proposed method.
+      </span>
+    </section>
+
+    <section>
+        <h2>Results</h2>
+
+        <div class="thumbnail with-caption">
+          <img src="results/result_sword.png" alt="Sword results" width="100%" style="border: 0">
+          <p><strong>Sword results. Starting from a base tiling with 161 pieceess, we can create polyomino puzzles with fewer pieces.</strong></p>
+        </div>
+
+        <div class="thumbnail with-caption">
+          <img src="results/result_heart.png" alt="Heart results" width="100%" style="border: 0">
+          <p><strong>The composition and size of the base tile set can affest the final piece shapes.</strong> The size of the base tile represents the weights of the tiles (tiles with higher weights are more likely to be chosen in the tiling process). Tiles with equal weights are used in the two leftmost examples, while higher weights are assigned to the I-type tiles in the remaining three examples. In these three examples, we also fix the orientation of the I-type tiles.</p>
+        </div>
+
+        <div class="thumbnail with-caption">
+          <img src="results/result2d.png" alt="2D pixel art results" width="100%" style="border: 0">
+          <p><strong>Polyomino puzzles from 2D pixel art.</strong> From left to right: reference pixel arts, target region, and puzzle piece partitioning result. (a-b) Mario and Piranha plant: &copy;Nintendo Co., Ltd. (c) Megaman: &copy;CAPCOM Co., Ltd.</p>
+        </div>
+
+        <div class="thumbnail with-caption">
+          <img src="results/result3d.png" alt="2D pixel art results" width="100%" style="border: 0">
+          <p><strong>Polycube puzzles from voxel models.</strong></p>
+        </div>
+
+    </section>
+
+    <section>
+      <h2>Links</h2>
+      <span style="font-size: 13pt">
+        <ul>
+          <li><i class="fas fa-link"></i> <a href="https://doi.org/">DOI</a></li>
+        </ul>
+      </span>
+    </section>
+
+    <section>
+      <h2>Acknowledgements</h2>
+      <span style="font-size: 13pt">
+        This work was supported by JSPS KAKENHI Grant numbers 19K24338 and 20K19944.
+      </span>
+    </section>
+
+    <section>
+      <h2>Bibtex</h2>
+      <span style="font-size: 13pt">
+        <pre>
+@article{Kita:CGI2020,
+  title = {Computational design of polyomino puzzles},
+  author = {Kita, Naoki and Miyata, Kazunori},
+  year = {2020},
+  journal = {The Visual Computer},
+  volume = {36},
+  number = {9},
+  issn = {1432-2315},
+  pages = {XXXX--XXXX},
+  url = {https://doi.org/10.1007/s00371-020-01968-5},
+  doi = {10.1007/s00371-020-01968-5},
+}
+        </pre>
+      </span>
+    </section>
+
+  </div>
+
+</div> <!-- /container -->
+<footer>
+<div class="container">
+<hr>
+<p>Copyright &copy; Naoki Kita All rights reserved (Last updated: Oct 25, 2020)</p>
+</div>
+</footer>
+</body>
+</html>
