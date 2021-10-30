@@ -63,6 +63,10 @@ hr {
   margin-top: -14px;
 }
 
+.award {
+  color:lightcoral;
+}
+
 .hidden_box {
   margin: 2em 0;
   padding: 0;
