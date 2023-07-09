@@ -6,86 +6,70 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="title" content="Magic Sheet">
 <title>Magic Sheet</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-<link href="../../custom.css" rel="stylesheet">
-<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-<!--[if lt IE 9]>
-<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
-<![endif]-->
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-38577526-1"></script>
 <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-38577526-1');</script>
 </head>
-<body>
-<div class="container">
+<body class="antialiased font-sans">
 
-  <div class="row">
-    <div class="text-center">
-      <h2>Magic Sheet: Visual Cryptography with Common Shares</h2>
-      <ul class="text-center authors" style="font-size: 13pt"> 
-        <li><a href="http://naokita.xyz">Naoki Kita</a><sup>1</sup></li> 
-        <li><a href="http://www.jaist.ac.jp/~miyata/">Kazunori Miyata</a><sup>1</sup></li>
+<div class="container mx-auto p-5">
+
+  <div class="text-center">
+      <h2 class="text-3xl font-bold">Magic Sheet: Visual Cryptography with Common Shares</h2>
+      <div class="flex justify-center text-lg mt-3 space-x-4"> 
+        <div><a href="http://naokita.xyz" class="text-blue-600">Naoki Kita</a><sup>†</sup></div>
+        <div><a href="http://www.jaist.ac.jp/~miyata/">Kazunori Miyata</a><sup>†</sup></div>
+      </div>
+      <ul class="text-center affiliation text-lg">
+        <li><sup>†</sup> Japan Advanced Institute of Science and Technology</li>
       </ul>
-      <p class="text-center" style="font-size: 13pt">
-          <sup>1</sup><a href="https://www.jaist.ac.jp/english/">Japan Advanced Institute of Science and Technology</a>
-          <br/><br/>
-          <a href="http://iccvm.org/2018/">CVM 2018</a>
-        </p>
-      <img src="representative.jpg" alt="representative image" width="80%" style="border: 0">
+      <p class="mt-3">CVM 2018</p>
+      <img src="representative.webp" alt="teaser image" class="mt-5 mx-auto w-full h-auto" loading="lazy">
   </div>
 
-    <section>
-      <h2>Abstract</h2>
-      <span style="font-size: 13pt">
+  <div>
+    <section class="mt-10">
+      <h2 class="text-2xl font-bold">Abstract</h2>
+      <span class="text-lg mt-3 block">
         Visual cryptography (VC) is an encryption technique for hiding a secret image in distributed and shared images (referred to as shares). VC schemes are employed to encrypt multiple images as meaningless, noisy patterns or meaningful images. However, decrypting multiple secret images using a unique share is difficult with traditional VC. We propose an approach to hide multiple images in meaningful shares. We can decrypt multiple images simultaneously using a common share, which we refer to as a magic sheet. The magic sheet decrypts multiple secret images depending on a given share. The shares are printed on transparencies, and decryption is performed by physically superimposing the transparencies. We evaluate the proposed method using binary, grayscale, and color images.
       </span>
     </section>
 
-    <section>
-        <h2>Results</h2>
-  
-        <div class="thumbnail with-caption">
-          <img src="results/evcs_gray.png" alt="Results" width="80%" style="border: 0">
-          <p><strong>Result for grayscale images.</strong> The bottom secrets are decrypted by superimposing the corresponding cover images listed above them.</p>
+    <section class="mt-10">
+        <h2 class="text-2xl font-bold">Results</h2>
+        <div class="mt-5">
+          <img src="results/evcs_gray.png" alt="Result for grayscale images" class="w-full h-auto" loading="lazy">
         </div>
-  
-        <div class="thumbnail with-caption">
-          <img src="results/evcs_color.png" alt="Dice Art (Dragon)" width="80%" style="border: 0">
-          <p><strong>Result for color images.</strong> The bottom secrets are decrypted by superimposing the corresponding cover images listed above them.</p>
+        <div class="mt-5">
+          <img src="results/evcs_color.png" alt="Result for color images" class="w-full h-auto" loading="lazy">
         </div>
-  
-        <div class="thumbnail with-caption">
-          <img src="results/evcs_printed.png" alt="Transformation Sequence" width="80%" style="border: 0">
-          <p><strong>Resulting patterns printed on transparencies using a commercial inkjet printer.</strong> Top: simulation. Bottom: photo.</p>
+        <div class="mt-5">
+          <img src="results/evcs_printed.png" alt="Resulting patterns printed on transparencies using a commercial inkjet printer" class="w-full h-auto" loading="lazy">
         </div>
+        <div class="mt-5">
+          <img src="results/evcs_more.png" alt="More images" class="w-full h-auto" loading="lazy">
+        </div>
+    </section>
 
-        <div class="thumbnail with-caption">
-          <img src="results/evcs_more.png" alt="Transformation Sequence" width="80%" style="border: 0">
-          <p><strong>More images.</strong> Our method can be applied to more images.</p>
-        </div>
-        
-      </section>
-
-    <section>
-        <h2>Links</h2>
-        <span style="font-size: 13pt">
-          <ul>
-            <li><i class="fas fa-link"></i> <a href="https://dx.doi.org/10.1007/s41095-018-0108-x">DOI</a></li>
-          </ul>
-        </span>
-      </section>
-
-    <section>
-      <h2>Acknowledgements</h2>
-      <span style="font-size: 13pt">
-        We thank all reviewers for their helpful comments. This work was supported by JSPS KAKENHI Grant numbers 17J04232 and 16K12433.
+    <section class="mt-10">
+      <h2 class="text-2xl font-bold">Links</h2>
+      <span class="text-lg mt-3 block">
+        <ul>
+          <li><a href="https://dx.doi.org/10.1007/s41095-018-0108-x" class="text-blue-600">DOI</a></li>
+        </ul>
       </span>
     </section>
 
-    <section>
-      <h2>Bibtex</h2>
-      <span style="font-size: 13pt">
+    <section class="mt-10">
+      <h2 class="text-2xl font-bold">Acknowledgements</h2>
+      <span class="text-lg mt-3 block">
+        This work was supported by JSPS KAKENHI Grant numbers 17J04232 and 16K12433.
+      </span>
+    </section>
+
+    <section class="mt-10">
+      <h2 class="text-2xl font-bold">Bibtex</h2>
+      <span class="text-lg mt-3 block">
         <pre>
 @article{Kita:CVM:2018,
   title = {Magic sheet: Visual cryptography with common shares},
@@ -104,15 +88,11 @@
         </pre>
       </span>
     </section>
-  
   </div>
 
-</div> <!-- /container -->
-<footer>
-<div class="container">
-<hr>
-<p>Copyright &copy; Naoki Kita All rights reserved (Last updated: May 15, 2018)</p>
 </div>
+<footer class="mt-20 border-t py-5 text-center">
+<p class="text-gray-600">Copyright &copy; Naoki Kita All rights reserved.</p>
 </footer>
 </body>
 </html>

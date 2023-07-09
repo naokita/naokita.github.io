@@ -6,80 +6,68 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="title" content="Spherical Mapping">
 <title>Spherical Mapping</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-<link href="../../custom.css" rel="stylesheet">
-<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-<!--[if lt IE 9]>
-<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
-<![endif]-->
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-38577526-1"></script>
 <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-38577526-1');</script>
 </head>
-<body>
-<div class="container">
+<body class="antialiased font-sans">
 
-  <div class="row">
-    <div class="text-center">
-      <h2>Mapping Two-Dimensional Plots to a Spherical Surface using Elliptical Grid Mapping</h2>
-      <ul class="text-center authors" style="font-size: 13pt"> 
-        <li><a href="http://naokita.xyz">Naoki Kita</a><sup>1,2</sup></li>
-        <li>Grégoire Cliquet<sup>3</sup></li>
-        <li><a href="http://www.jaist.ac.jp/~miyata/">Kazunori Miyata</a><sup>1</sup></li>
-      </ul>
-      <ul class="text-center affiliation" style="font-size: 13pt">
+<div class="container mx-auto p-5">
+
+  <div class="text-center">
+      <h2 class="text-3xl font-bold">Mapping Two-Dimensional Plots to a Spherical Surface using Elliptical Grid Mapping</h2>
+      <div class="flex justify-center text-lg mt-3 space-x-4"> 
+        <div><a href="http://naokita.xyz" class="text-blue-600">Naoki Kita</a><sup>1,2</sup></div>
+        <div>Grégoire Cliquet<sup>3</sup></div>
+        <div><a href="http://www.jaist.ac.jp/~miyata/">Kazunori Miyata</a><sup>1</sup></div>
+      </div>
+      <ul class="text-center affiliation text-lg">
         <li><sup>1</sup> <a href="https://www.jaist.ac.jp/english/">Japan Advanced Institute of Science and Technology</a></li>
         <li><sup>2</sup> <a href="https://www.tuat.ac.jp/en/">Tokyo University of Agriculture and Technology</a></li>
         <li><sup>3</sup> <a href="https://www.lecolededesign.com/">L´École de Design Nantes-Atlantique</a></li>
-        <br/><br/>
-        <a href="http://iccvm.org/2020/">CVM 2020</a> 
-        </p>
-      <img src="teaser.png" alt="teaser image" width="100%" style="border: 0">
+      </ul>
+      <p class="mt-3">CVM 2020</p>
+      <img src="teaser.png" alt="teaser image" class="mt-5 mx-auto w-full h-auto" loading="lazy">
   </div>
 
   <div>
-    <section>
-      <h2>Abstract</h2>
-      <span style="font-size: 13pt">
-        In this paper, we present a technique that maps 2D plots to a spherical surface. We project 2D plots as large as possible while minimizing distortions. To accomplish this projection, we employ elliptical grid mapping, which maps points on a cube to those on a sphere. To determine the largest projection from points on the 2D plot to the cube, we find the largest projection inside an unfolded cube pattern. The unfolded cube is then folded to construct a cube, and the projected 2D plot is mapped to a spherical surface. We consider all unfolding patterns of a cube and determine the optimal pattern for the projection. We apply the proposed mapping to high-dimensional data visualizations. Since the technique maps a plot to a spherical surface surrounding the user, and this covers a wider range of the users field of view, our mapping provides an immersive experience to users.
+    <section class="mt-10">
+      <h2 class="text-2xl font-bold">Abstract</h2>
+      <span class="text-lg mt-3 block">
+        Visual cryptography (VC) is an encryption technique for hiding a secret image in distributed and shared images (referred to as shares). VC schemes are employed to encrypt multiple images as meaningless, noisy patterns or meaningful images. However, decrypting multiple secret images using a unique share is difficult with traditional VC. We propose an approach to hide multiple images in meaningful shares. We can decrypt multiple images simultaneously using a common share, which we refer to as a magic sheet. The magic sheet decrypts multiple secret images depending on a given share. The shares are printed on transparencies, and decryption is performed by physically superimposing the transparencies. We evaluate the proposed method using binary, grayscale, and color images.
       </span>
     </section>
 
-    <section>
-        <h2>Results</h2>
-  
-        <div class="thumbnail with-caption">
-          <img src="results/result_sphere.png" alt="Spherical mapping results" width="100%" style="border: 0">
+    <section class="mt-10">
+        <h2 class="text-2xl font-bold">Results</h2>
+        <div class="mt-5">
+          <img src="results/result_sphere.png" alt="Spherical mapping results" class="w-full h-auto" loading="lazy">
         </div>
-  
-        <div class="thumbnail with-caption">
-          <img src="results/result_mnist.png" alt="MNIST visualization" width="100%" style="border: 0">
-          <p><strong>Visualization of the MNIST dataset in a VR environment.</strong> (a) Visualization of 2500 digit images by t-SNE. (b) Viewing of (a) in a VR environment. (c) Viewing of (a) mapped on a spherical surface by the proposed method.</p>
+        <div class="mt-5">
+          <img src="results/result_mnist.png" alt="MNIST visualization" class="w-full h-auto" loading="lazy">
         </div>
-        
     </section>
 
-    <section>
-      <h2>Links</h2>
-      <span style="font-size: 13pt">
+    <section class="mt-10">
+      <h2 class="text-2xl font-bold">Links</h2>
+      <span class="text-lg mt-3 block">
         <ul>
-          <li><i class="fas fa-link"></i> <a href="https://doi.org/10.1016/j.gmod.2020.101067">DOI</a></li>
-          <li><i class="fas fa-link"></i> <a href="SphericalMapping_cvm2020.pdf">Paper (Author's version, 12.7 MB)</a></li>
+          <li><a href="https://doi.org/10.1016/j.gmod.2020.101067" class="text-blue-600">DOI</a></li>
+          <li><a href="SphericalMapping_cvm2020.pdf" class="text-blue-600">Paper (Author's version, 12.7 MB)</a></li>
         </ul>
       </span>
     </section>
 
-    <section>
-      <h2>Acknowledgements</h2>
-      <span style="font-size: 13pt">
-        We thank all reviewers for their helpful comments. This work was supported by JSPS KAKENHI Grant number 19K24338.
+    <section class="mt-10">
+      <h2 class="text-2xl font-bold">Acknowledgements</h2>
+      <span class="text-lg mt-3 block">
+        This work was supported by JSPS KAKENHI Grant number 19K24338.
       </span>
     </section>
 
-    <section>
-      <h2>Bibtex</h2>
-      <span style="font-size: 13pt">
+    <section class="mt-10">
+      <h2 class="text-2xl font-bold">Bibtex</h2>
+      <span class="text-lg mt-3 block">
         <pre>
 @article{KITA2020101067,
   title = "Mapping two-dimensional plots to a spherical surface using elliptical grid mapping",
@@ -92,20 +80,15 @@
   url = "http://www.sciencedirect.com/science/article/pii/S1524070320300126",
   author = "Naoki Kita and Grégoire Cliquet and Kazunori Miyata",
   keywords = "Mapping technique, Layout optimization, Data visualization, Virtual reality",
-  abstract = "In this paper, we present a technique that maps 2D plots to a spherical surface. We project 2D plots as large as possible while minimizing distortions. To accomplish this projection, we employ elliptical grid mapping, which maps points on a cube to those on a sphere. To determine the largest projection from points on the 2D plot to the cube, we find the largest projection inside an unfolded cube pattern. The unfolded cube is then folded to construct a cube, and the projected 2D plot is mapped to a spherical surface. We consider all unfolding patterns of a cube and determine the optimal pattern for the projection. We apply the proposed mapping to high-dimensional data visualizations. Since the technique maps a plot to a spherical surface surrounding the user, and this covers a wider range of the users field of view, our mapping provides an immersive experience to users."
-  }
+}
         </pre>
       </span>
     </section>
-  
   </div>
 
-</div> <!-- /container -->
-<footer>
-<div class="container">
-<hr>
-<p>Copyright &copy; Naoki Kita All rights reserved (Last updated: Jan 3, 2020)</p>
 </div>
+<footer class="mt-20 border-t py-5 text-center">
+<p class="text-gray-600">Copyright &copy; Naoki Kita All rights reserved.</p>
 </footer>
 </body>
 </html>

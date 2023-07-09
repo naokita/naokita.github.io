@@ -1,412 +1,382 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="title" content="Naoki KITA">
-<meta name="description" content="This is Naoki KITA's website. Welcome!">
-<title>Naoki KITA</title>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href="./custom.css" rel="stylesheet">
-<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-<!--[if lt IE 9]>
-<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
-<![endif]-->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-38577526-1"></script>
-<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-38577526-1');</script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Naoki KITA">
+    <meta name="description" content="This is Naoki KITA's website. Welcome!">
+    <title>Naoki KITA</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .publication-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-out;
+        }
+
+        .publication-content.show {
+            max-height: 1000px; /* approximate max height */
+        }
+
+        .toggle:after {
+            content: '▶';
+        }
+
+        .toggle.show:after {
+            content: '▼';
+        }
+    </style>
 </head>
-<body>
-<div class="container">
 
-  <div class="row">
-    <div class="col-xs-6 col-sm-3 col-md-3 text-center">
-      <div class="thumbnail with-caption small">
-        <img src="img/prof.jpg" alt="profile image" width=250>
-      </div>
-    </div>
-    <div class="col-xs-12 col-sm-9 col-md-9">
-      <h2> Naoki KITA</h2>
-      <ul>
-        <li>Ph.D. Assistant Professor  <span class="fa fa-envelope-o fa-fw"></span> Email: nkita<span class="fa fa-at fa-fw"></span>go.tuat.ac.jp</li>
-        <li><span class="fa fa-location-arrow fa-fw"></span><a href="http://web.tuat.ac.jp/~vcl_/">Visual Computing Laboratory, Tokyo University of Agriculture and Technology</a></li>
-        <li><span class="fa fa-file fa-fw"></span> <a href="cv_kita.pdf">CV</a></li>
-        <li><span class="fa fa-google fa-fw"></span> <a href="https://scholar.google.at/citations?hl=en&user=_sCKWwoAAAAJ&view_op=list_works&sortby=pubdate">Google Scholar</a></li>
-        <li><span class="fa fa-graduation-cap"></span> <a href="https://researchmap.jp/nkita/">researchmap</a></li>
-      </ul>
-    </div>
-    <p>I am an assistant professor at Tokyo University of Agriculture and Technology. I received my Ph.D. at Japan Advanced Institute of Science and Technology (JAIST). I received my B.S. degree in science from Kanazawa University in 2009, and my M.S. in knowledge science from JAIST in 2011. My current research interests include computational design/fabrication and human visual perception, especially in layout/arrangement for discrete elements.</p>
-  </div>
+<body class="font-sans text-gray-900">
+    <div class="container mx-auto px-4">
 
-  <div class="row">
-
-    <section>
-      <h2>News</h2>
-      <ul>
-        <li>[2022.10] Two posters were accepted to SIGGRAPH Asia 2022.</li>
-        <li>[2022.03] I will give a talk at <a href="http://www.jaist.ac.jp/event/design2022/">ISID 2022</a>.</li>
-        <li>[2021.09] One co-authored poster is presented at IEVC 2021.</li>
-        <li>[2021.08] One co-authored paper was accepted to IIEEJ.</li>
-        <li>[2021.05] Two co-authored papers were accepted to IIEEJ.</li>
-        <li>[2020.09] One paper was accepted to CGI 2020.</li>
-        <li>[2020.05] One paper was accepted to SMI 2020.</li>
-        <li>[2019.12] One paper was accepted to CVM 2020.</li>
-        <!--<li>[2019.08] Three co-authored papers and two co-authored posters are presented at <a href="https://www.iieej.org/en/ievc2019/">IEVC 2019</a>.</li>
-        <li>[2019.08] One co-authored paper has been accepted to Remote Sensing (an open access journal).</li>
-        <li>[2019.05] My work for the color/element pattern is presented at Booth #109, <a href="http://www.e-messe.jp/">e-messe kanazawa 2019</a>.
-        <li>[2019.04] I joined the Visual Computing Laboratory at Tokyo University of Agriculture and Technology as an assistant professor.</li>
-        <li>[2019.03] I got a Ph.D in knowledge science at JAIST.</li>
-        <li>[2018.08] Our paper was accepted to the journal of IIEEJ (Japanese edition).</li>
-        <li>[2018.07] Now we are partially supported by JAIST Research Grant (Fundamental Research) 2018.</li>
-        <li>[2018.06] I present our work at <a href="http://cgvi.jp/vc2018/">VC 2018 in Yamagata</a>.</li>
-        <li>[2018.06] I became a member of the editorial committee of IEICE.</li>
-        <li>[2018.02] I participate in <a href="http://www.jaist.ac.jp/event/innovation2018/index.html">JWC 2018</a> poster session.</li>
-        <li>[2018.01] Our paper "Magic Sheet" was accepted to <a href="http://iccvm.org/2018/">CVM 2018, Shanghai</a> and Computational Visual Media (SpringerOpen Journal).</li>
-        <li>[2017.09] We will demonstrate our project IDEA (Immersive Data Exploration and Analysis) at <a href="http://www.nantesdigitalweek.com/">Nantes Digital Week 2017</a>.</li>
-        <li>[2017.03] I will attend <a href="http://www.laval-virtual.org/en/">Laval Virtual 2017</a>.</li>
-        <li>[2017.02] I join <a href="http://en.lecolededesign.com/research-design-labs/readi-design-lab/">READi Design Lab</a> at L'École de design Nantes Atlantique (Feb 2017 - Nov 2017).</li>
-        <li>[2016.11] I will present our poster at <a href="https://sa2016.siggraph.org/">SIGGRAPH Asia 2016, Macao</a>.</li>
-        <li>[2016.08] Our paper was accepted to <a href="http://indico.oist.jp/PG16">PG 2016, Okinawa</a>.</li>
-        <li>[2016.07] I present our Element Pattern paper at <a href="http://www.ics.forth.gr/CGI2016/">CGI'16, Greece</a>.</li> -->
-      </ul>
-    </section> <!-- /News -->
-
-    <section>
-      <h2>Projects</h2>
-
-      <div class="media">
-        <div class="media-left media-middle">
-          <img class="media-object" src="projects/PaletteBasedImageSearch/pbis_siga2022.png" alt="" width=180>
-        </div>
-        <div class="media-body">
-          <h4 class="media-heading">Palette-based Image Search with Color Weights</h4>
-          <strong>Naoki Kita</strong>, Shiori Kawasaki, Takafumi Saito<br>
-          <p><i>SIGGRAPH Asia 2022 Posters</i></p>
-          <p>
-            [<a href="https://doi.org/10.1145/3550082.3564203">DOI</a>]
-          </p>
-        </div>
-      </div>
-
-      <div class="media">
-        <div class="media-left media-middle">
-          <img class="media-object" src="projects/ProcCrystal/proc_crystal_siga2022.png" alt="" width=180>
-        </div>
-        <div class="media-body">
-          <h4 class="media-heading">Procedural Modeling of Crystal Clusters</h4>
-          <strong>Naoki Kita</strong>, Satoshi Tsukii, Miwako Tsuru<br>
-          <p><i>SIGGRAPH Asia 2022 Posters</i></p>
-          <p>
-            [<a href="https://doi.org/10.1145/3550082.3564165">DOI</a>]
-          </p>
-        </div>
-      </div>
-
-      <div class="media">
-        <div class="media-left media-middle">
-          <img class="media-object" src="projects/PolyominoPuzzles/cgi2020_polyomino_puzzles.png" alt="" width=180>
-        </div>
-        <div class="media-body">
-          <h4 class="media-heading">Computational Design of Polyomino Puzzles</h4>
-          <strong>Naoki Kita</strong>, Kazunori Miyata<br>
-          <p><i>The Visual Computer (CGI 2020)</i></p>
-          <p>
-            [<a href=projects/PolyominoPuzzles/index.html>Project page</a>]
-            [<a href="https://dx.doi.org/10.1007/s00371-020-01968-5">DOI</a>]
-          </p>
-        </div>
-      </div>
-
-      <div class="media">
-        <div class="media-left media-middle">
-          <img class="media-object" src="projects/CentrifugalPuzzles/smi2020_centrifugal_puzzles.png" alt="" width=180>
-        </div>
-        <div class="media-body">
-          <h4 class="media-heading">Computational Design of Generalized Centrifugal Puzzles</h4>
-          <strong>Naoki Kita</strong>, Takafumi Saito<br>
-          <p><i>Computers & Graphics (SMI 2020)</i></p>
-          <p>
-            [<a href=projects/CentrifugalPuzzles/index.html>Project page</a>]
-            [<a href="https://doi.org/10.1016/j.cag.2020.05.005">DOI</a>]
-          </p>
-        </div>
-      </div>
-
-      <div class="media">
-          <div class="media-left media-middle">
-            <img class="media-object" src="projects/SphericalMapping/cvm2020_spherical_mapping.png" alt="" width=180>
-          </div>
-          <div class="media-body">
-            <h4 class="media-heading">Mapping Two-Dimensional Plots to a Spherical Surface using Elliptical Grid Mapping</h4>
-            <strong>Naoki Kita</strong>, Grégoire Cliquet, Kazunori Miyata<br>
-            <p><i>Graphical Models (CVM 2020)</i></p>
-            <p>
-              [<a href=projects/SphericalMapping/index.html>Project page</a>]
-              [<a href="https://doi.org/10.1016/j.gmod.2020.101067">DOI</a>]
-              [<a href="projects/SphericalMapping/SphericalMapping_cvm2020.pdf">Paper (Author's version, 12.7 MB)</a>]
-            </p>
-          </div>
-        </div>
-
-      <div class="media">
-        <div class="media-left media-middle">
-          <img class="media-object" src="projects/MagicSheet/cvm2018_magic_sheet.png" alt="" width=180>
-        </div>
-        <div class="media-body">
-          <h4 class="media-heading">Magic Sheet: Visual Cryptography with Common Shares</h4>
-          <strong>Naoki Kita</strong>, Kazunori Miyata<br>
-          <p><i>Computational Visual Media (CVM 2018)</i></p>
-          <p>
-            [<a href=projects/MagicSheet/index.html>Project page</a>]
-            [<a href="https://dx.doi.org/10.1007/s41095-018-0108-x">DOI</a>]
-          </p>
-        </div>
-      </div>
-
-      <div class="media">
-        <div class="media-left media-middle">
-          <img class="media-object" src="projects/CubeArt/siga2016_cube_art.png" alt="" width=180>
-        </div>
-        <div class="media-body">
-          <h4 class="media-heading">Cube Art</h4>
-          <strong>Naoki Kita</strong>, Kazunori Miyata<br>
-          <p><i>SIGGRAPH Asia 2016 Posters</i></p>
-          <p>
-            [<a href="projects/CubeArt/index.html">Project page</a>]
-            [<a href="https://dx.doi.org/10.1145/3005274.3005305">DOI</a>]
-            [<a href="projects/CubeArt/CubeArt_siga16.pdf">PDF (750 KB)</a>]
-            [<a href="projects/CubeArt/CubeArt_siga16_supplemental.pdf">Supplemental Material (16.4 MB)</a>]
-          </p>
-          <p>[<a href="http://www.saiensu.co.jp/?page=book_details&ISBN=4910054690460&YEAR=2016">Cover (Japanese Science Magazine)</a>]</p>
-        </div>
-      </div>
-
-      <div class="media">
-        <div class="media-left media-middle">
-          <img class="media-object" src="projects/ColorPalette/pg16_color_palette.png" alt="" width=180>
-        </div>
-        <div class="media-body">
-          <h4 class="media-heading">Aesthetic Rating and Color Suggestion for Color Palettes</h4>
-          <strong>Naoki Kita</strong>, Kazunori Miyata<br>
-          <p><i>Computer Graphics Forum (Pacific Graphics 2016)</i></p>
-          <p>
-            [<a href="projects/ColorPalette/index.html">Project page</a>]
-            [<a href="https://dx.doi.org/10.1111/cgf.13010">DOI</a>]
-            [<a href="projects/ColorPalette/ColorPalette_pg2016.pdf">PDF (11.6 MB)</a>]
-            [<a href="projects/ColorPalette/ColorPalette_pg2016_supplemental_material.pdf">Supplemental Material (487 KB)</a>]
-          </p>
-        </div>
-      </div>
-
-      <div class="media">
-        <div class="media-left media-middle">
-          <img class="media-object" src="projects/ElementPattern/cgi2016_element_pattern.png" alt="" width=180>
-        </div>
-        <div class="media-body">
-          <h4 class="media-heading">Multi-class anisotropic blue noise sampling for discrete element pattern generation</h4>
-          <strong>Naoki Kita</strong>, Kazunori Miyata<br>
-          <p><i>The Visual Computer (CGI'16)</i></p>
-          <p>
-            [<a href="projects/ElementPattern/index.html">Project page</a>]
-            [<a href="https://dx.doi.org/10.1007/s00371-016-1248-6">DOI</a>]
-            [<a href="projects/ElementPattern/supplemental.pdf">Supplemental Material (16.1 MB)</a>]
-          </p>
-        </div>
-      </div>
-
-      <div class="media">
-        <div class="media-left media-middle">
-          <img class="media-object" src="projects/PebbleMosaic/siga2011_pebble_mosaic.jpg" alt="" width=180>
-        </div>
-        <div class="media-body">
-          <h4 class="media-heading">Interactive procedural modeling of pebble mosaics</h4>
-          <strong>Naoki Kita</strong>, Kazunori Miyata<br>
-          <p><i>SIGGRAPH Asia 2011 Sketches</i></p>
-          <p>
-            [<a href="https://dx.doi.org/10.1145/2077378.2077422">DOI</a>]
-            [<a href="projects/PebbleMosaic/pebble_mosaic_siga2011.pdf">PDF (5.6 MB)</a>]
-          </p>
-        </div>
-      </div>
-
-      <div class="media">
-        <div class="media-left media-middle">
-          <img class="media-object" src="projects/LibraryScene/siga2010_library_scene.png" alt="" width=180>
-        </div>
-        <div class="media-body">
-          <h4 class="media-heading">A rule-based method for generating bookshelf models</h4>
-          <strong>Naoki Kita</strong>, Kazunori Miyata<br>
-          <p><i>SIGGRAPH Asia 2010 Posters</i></p>
-          <p>
-            [<a href="https://dx.doi.org/10.1145/1900354.1900394">DOI</a>]
-            [<a href="projects/LibraryScene/library_scene_siga2010.pdf">PDF (2.4 MB)</a>]
-          </p>
-        </div>
-      </div>
-
-      <div class="media">
-        <div class="media-left media-middle">
-          <img class="media-object" src="projects/SpiderHero/vrcai2009_spiderhero.jpg" alt="" width=180>
-        </div>
-        <div class="media-body">
-          <h4 class="media-heading">Spider Hero: A VR application using pulling force feedback system</h4>
-          Ken Ishibashi, Toni Da Luz, Remmy Eynard, <strong>Naoki Kita</strong>, Nan Jian, Hiroshi Segi, Keisuke Terada, Kyohei Fujita, Kazunori Miyata<br>
-          <p><i>VRCAI 2009</i></p>
-          <p>
-              [<a href="http://www.jaist.ac.jp/spiderhero/">Project page (Japanese)</a>]
-            [<a href="https://dx.doi.org/10.1145/1670252.1670294">DOI</a>]
-          </p>
-        </div>
-      </div>
-
-    </section> <!-- /Publication -->
-
-    <section>
-        <h2>Publications</h2>
-        <!-- International Publications -->
-        <div class="hidden_box">
-            <label for="publications">International publications</label>
-            <input type="checkbox" id="publications"/>
-            <div class="hidden_show">
-              <h3>International Journal (Peer-reviewed)</h3>
-              <ul>
-                <li><span class="fa fa-square-o fa-fw"></span> <strong>N. Kita</strong>, K. Miyata, "Computational Design of Polyomino Puzzles", The Visual Computer, Vol.37, No.4, pp.777-787 (2021)</li>
-                <li><span class="fa fa-square-o fa-fw"></span> <strong>N. Kita</strong>, T. Saito, "Computational Design of Generalized Centrifugal Puzzles", Computers & Graphics, Vol.90, pp.21-28 (2020)</li>
-                <li><span class="fa fa-square-o fa-fw"></span> <strong>N. Kita</strong>, G. Cliquet, K. Miyata, "Mapping Two-Dimensional Plots to a Spherical Surface using Elliptical Grid Mapping", Graphical Models, Vol.109, 101067 (2020)</li>
-                <li><span class="fa fa-square-o fa-fw"></span> M. Mardani, H. Mardani, L.-D. Simone, S. Varas, <strong>N. Kita</strong>, T. Saito, "Integration of Machine Learning and Open Access Geospatial Data for Land Cover Mapping”, Remote Sensing, Vol.11, No.16, 1907 (2019)</li>
-                <li><span class="fa fa-square-o fa-fw"></span> <strong>N. Kita</strong>, K. Miyata, "Magic sheets: Visual cryptography with common shares", Computational Visual Media, Vol.4, No.2, pp.185--195 (2018)</li>
-                <li><span class="fa fa-square-o fa-fw"></span> <strong>N. Kita</strong>, K. Miyata, "Aesthetic Rating and Color Suggestion for Color Palettes", Computer Graphics Forum, Vol.35, No.7, pp.127--136 (2016)</li>
-                <li><span class="fa fa-square-o fa-fw"></span> <strong>N. Kita</strong> and K. Miyata, "Multi-class anisotropic blue noise sampling for discrete element pattern generation", The Visual Computer, Springer, Vol.32, No.6, pp.1035--1044 (2016)</li>
-              </ul>
-
-              <h3>International Conference (Peer-reviewed, Oral Presentation)</h3>
-              <ul>
-                <li><span class="fa fa-square-o fa-fw"></span> <strong>N. Kita</strong>, K. Miyata, T. Saito, "Computational Design of Polyomino Puzzles", Computer Graphics International (CGI 2020), Geneva, Switzerland (October 2020)</li>
-                <li><span class="fa fa-square-o fa-fw"></span> <strong>N. Kita</strong>, G. Cliquet, K. Miyata, "Mapping Two-Dimensional Plots to a Spherical Surface using Elliptical Grid Mapping", CVM 2020, Macau, China (September 2020)</li>
-                <li><span class="fa fa-square-o fa-fw"></span> <strong>N. Kita</strong>, T. Saito, "Computational Design of Generalized Centrifugal Puzzles", Shape Modeling International (SMI 2020), Strasbourg, France (June 2020)</li>
-                <li><span class="fa fa-square-o fa-fw"></span>C. Sato, <strong>N. Kita</strong>, T. Saito, “Generating Route Panoramas for Street Guide Maps”, The 6th IIEEJ International Conference on Image Electronics and Visual Computing (IEVC 2019), Bali, Indonesia (August 2019)</li>
-                <li><span class="fa fa-square-o fa-fw"></span>H. Watai, <strong>N. Kita</strong>, T. Saito, “Two-Dimensional Flow Field Visualization Using Hierarchical Poisson Disk Sampling”, The 6th IIEEJ
-                  International Conference on Image Electronics and Visual Computing (IEVC 2019), Bali, Indonesia (August 2019)</li>
-                <li><span class="fa fa-square-o fa-fw"></span>M. Iwasaki, <strong>N. Kita</strong>, T. Saito, “Natural Extension Method of Video Length”, The 6th IIEEJ International Conference on Image
-                  Electronics and Visual Computing (IEVC 2019), Bali, Indonesia (August 2019)</li>
-                <li><span class="fa fa-square-o fa-fw"></span> <strong>N. Kita</strong>, K. Miyata, "Magic Sheet: Visual Cryptography with Common Shares", CVM 2018, Shanghai, China (April 2018)</li>
-                <li><span class="fa fa-square-o fa-fw"></span> <strong>N. Kita</strong>, K. Miyata, "Aesthetic Rating and Color Suggestion for Color Palettes", Pacific Graphics (PG 2016), Okinawa, Japan (October 2016)</li>
-                <li><span class="fa fa-square-o fa-fw"></span> <strong>N. Kita</strong>, K. Miyata, "Multi-class anisotropic blue noise sampling for discrete element pattern generation", Computer Graphics International (CGI 2016), Heraklion, Crete, Greece (June 2016)</li>
-                <li><span class="fa fa-square-o fa-fw"></span> <strong>N. Kita</strong>, K. Miyata, "Interactive Procedural Modeling of Pebble Mosaics", ACM SIGGRAPH Asia 2011 Sketches, ACM SA ’11, Article 35, pp.35:1-35:2, Hong Kong, China (December 2011)</li>
-                <li><span class="fa fa-square-o fa-fw"></span> K. Ishibashi, T. Da Luz, R. Eynard, <strong>N. Kita</strong>, N, Jiang, H. Segi, K. Terada, K. Fujita, K. Miyata, "Spider Hero", Laval Virtual Revolution 2010, An.3, Laval, France (April 2010)</li>
-                <li><span class="fa fa-square-o fa-fw"></span> K. Ishibashi, T. Da Luz, R. Eynard, <strong>N. Kita</strong>, N, Jiang, H. Segi, K. Terada, K. Fujita, K. Miyata, "Spider Hero: A VR application using pulling force feedback system", VRCAI2010, Session 7, Tokyo, Japan (December 2009)</li>
-              </ul>
-
-              <h3>International Conference (Peer-reviewed, Poster)</h3>
-              <ul>
-                <li><span class="fa fa-square-o fa-fw"></span> <strong>N. Kita</strong>, S. Kawasaki, T. Saito, "Palette-based Image Search with Color Weights", ACM SIGGRAPH ASIA 2022 Posters (SA '22 Posters), 2 pages, Daegu, Republic of Korea, (December 2022)</li>
-                <li><span class="fa fa-square-o fa-fw"></span> <strong>N. Kita</strong>, S. Tsukii, M. Tsuru, "Procedural Modeling of Crystal Clusters", ACM SIGGRAPH ASIA 2022 Posters  (SA '22 Posters), 2 pages, Daegu, Republic of Korea, (December 2022)</li>
-                <li><span class="fa fa-square-o fa-fw"></span>S. Tamaoki, <strong>N. Kita</strong>, T. Saito, “Semantics-Aware Color Palette Generation for Graphic Designs”, The 7th IIEEJ International Conference on Image Electronics and Visual Computing (IEVC 2021), Online (September 2021)</li>
-                <li><span class="fa fa-square-o fa-fw"></span>M. Mardani, <strong>N. Kita</strong>, T. Saito, “Application of Deep Learning and Open Access Geospatial Cloud Processing Platforms in Land Cover Mapping”, The 6th IIEEJ International Conference on Image Electronics and Visual Computing (IEVC 2019), Bali, Indonesia (August 2019)</li>
-                <li><span class="fa fa-square-o fa-fw"></span>M. Tanimizu, <strong>N. Kita</strong>, T. Saito, “Production Support of Resin Works Using Computer Graphics”, The 6th IIEEJ International Conference on Image Electronics and Visual Computing (IEVC 2019), Bali, Indonesia (August 2019)</li>
-                <li><span class="fa fa-square-o fa-fw"></span> <strong>N. Kita</strong>, K. Miyata, "Cube Art", ACM SIGGRAPH ASIA 2016 Posters, ACM SA '16, Article 30, pp.30:1--30:1, Macau, China (December 2016)</li>
-                <li><span class="fa fa-square-o fa-fw"></span> <strong>N. Kita</strong>, K. Miyata, "A rule-based method for generating bookshelf models", ACM SIGGRAPH Asia 2010 Posters, ACM SA ’10, Article 36, pp.36:1-36:2, Seoul, Republic of Korea (December 2010)</li>
-              </ul>
-
-              <!-- <h3>International Conference (Poster)</h3>
-              <ul>
-                <li><span class="fa fa-square-o fa-fw"></span> <strong>N. Kita</strong>, "Perceptually-based Discrete Element Arrangements", JAIST World Conference (JWC 2018), Poster Session, Ishikawa, Japan (February 2018)</li>
-                <li><span class="fa fa-square-o fa-fw"></span> <strong>N. Kita</strong>, "Vector Pattern Synthesis from Spatial Elements Distribution", HLD International Symposium, Poster Session, Ishikawa, Japan (March 2016)</li>
-              </ul> -->
-
+        <!-- Bio -->
+        <div class="mt-10 md:flex justify-center items-center">
+            <img src="img/prof.jpg" alt="Profile image" class="w-full md:w-1/4 object-cover rounded-lg mx-auto md:mx-0 md:mr-6" loading="lazy">
+            <div class="text-center md:text-left md:ml-6">
+                <h2 class="text-lg md:text-2xl font-bold mt-4 md:mt-0">Naoki KITA</h2>
+                <p class="text-gray-600 text-sm md:text-base">Ph.D. Assistant Professor</p>
+                <p class="text-gray-600 text-sm md:text-base">Email: nkita [at] go.tuat.ac.jp</p>
+                <a href="http://web.tuat.ac.jp/~vcl_/" target="_blank" class="text-blue-500 text-sm md:text-base">Visual Computing Laboratory, Tokyo University of Agriculture and Technology</a>
+                <p class="mt-2 text-sm md:text-base">
+                    <a href="cv_kita.pdf" class="text-blue-500">CV</a> |
+                    <a href="https://scholar.google.at/citations?hl=en&user=_sCKWwoAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" class="text-blue-500">Google Scholar</a> | 
+                    <a href="https://researchmap.jp/nkita/" target="_blank" class="text-blue-500">researchmap</a>
+                </p>
             </div>
         </div>
 
-        <!-- Domestic Publications-->
-        <div class="pub_domestic">
-          <label for="publications_domestic">Selected Domestic publications</label>
-          <input type="checkbox" id="publications_domestic"/>
-          <div class="pub_dom_show">
-            <h3>国内論文誌（査読有）</h3>
-            <ul>
-              <li><span class="fa fa-square-o fa-fw"></span> 菅原万梨夏, 田村崚, <strong>北直樹</strong>, 斎藤隆文, "模様の連続性を担保した包装紙デザインの自動生成", 画像電子学会誌, Vol.50, No.3, 419-424 (2021)</li>
-              <li><span class="fa fa-square-o fa-fw"></span> 玉置尚吾, <strong>北直樹</strong>, 斎藤隆文, "グラフィックデザインのためのセマンティクスを考慮した色候補生成", 画像電子学会誌, Vol.50, No.2, pp.277-283 (2021)</li>
-              <li><span class="fa fa-square-o fa-fw"></span> 安部龍馬, <strong>北直樹</strong>, 斎藤隆文, "モアレを用いた多彩な動き生成", 画像電子学会誌, Vol.50, No.2, pp.265-271 (2021)</li>
-              <li><span class="fa fa-square-o fa-fw"></span> <strong>北直樹</strong>, Grégoire Cliquet, 宮田一乘, "没入的VRデータ可視化のための2次元プロットの球面マッピング", 画像電子学会誌, Vol.47, No.4, pp.425-432 (2018)</li>
-              <li><span class="fa fa-square-o fa-fw"></span> 石橋賢, Toni Da Luz, Remy Eynard, <strong>北直樹</strong>, 姜南, 瀬木宏, 寺田圭祐, 藤田恭平, 宮田一乘, "スパイダーヒーロー: 張力提示によるエンタテインメントVR", 映像情報メディア学会誌, Vol.66, No.1, pp.J11-J16 (2012)</li>
+        <p class="mt-6 max-w-3xl mx-auto text-center text-gray-600">
+            I am an assistant professor at Tokyo University of Agriculture and Technology. I received my Ph.D. at Japan Advanced Institute of Science and Technology (JAIST). I received my B.S. degree in science from Kanazawa University in 2009, and my M.S. in knowledge science from JAIST in 2011. My current research interests include computational design/fabrication and human visual perception, especially in layout/arrangement for discrete elements.
+        </p>
+
+        <section class="mt-10">
+            <h2 class="font-bold text-xl md:text-2xl">News</h2>
+            <ul class="list-disc ml-5">
+                <li>[2022.10] Two posters were accepted to SIGGRAPH Asia 2022.</li>
+                <li>[2022.03] I will give a talk at ISID 2022.</li>
             </ul>
+        </section>
 
-            <h3>国内会議（口頭発表・査読有）</h3>
-            <ul>
-              <li><span class="fa fa-square-o fa-fw"></span> 川崎 詩織, <strong>北直樹</strong>, 斎藤 隆文, "色比率を考慮したパレットベース画像検索", NICOGRAPH 2022, 2022年11月 <span class=award>優秀論文賞（ショートペーパー）</span> <span class=award>NICOGRAPH賞</span></li>
-              <li><span class="fa fa-square-o fa-fw"></span> <strong>北直樹</strong>, 月井 智史, 都留 美和子, "水晶のプロシージャルモデリング ", 第28回 Visual Computing (VC 2020), オンライン, 2020年12月 <span class=award>優秀研究発表賞</span></li>
-              <li><span class="fa fa-square-o fa-fw"></span> 玉置尚吾, <strong>北直樹</strong>, 斎藤 隆文, "グラフィックデザインのためのセマンティクスを考慮したスマートな色候補生成と着色インターフェースの提案", 第28回 Visual Computing (VC 2020), オンライン, 2020年12月</li>
-              <li><span class="fa fa-square-o fa-fw"></span> 安部 龍馬, <strong>北直樹</strong>, 斎藤 隆文, "モアレを用いた多彩な動き生成 ", 第28回 Visual Computing (VC 2020), オンライン, 2020年12月</li>
-              <li><span class="fa fa-square-o fa-fw"></span> 菅原 万梨夏, 田村 崚, <strong>北直樹</strong>, 斎藤 隆文, "模様の連続性を担保した包装紙デザインの自動生成 ", 第28回 Visual Computing (VC 2020), オンライン, 2020年12月</li>
-              <li><span class="fa fa-square-o fa-fw"></span> <strong>北直樹</strong>, Grégoire Cliquet, 宮田一乘, "没入的VRデータ可視化のための球面への2次元プロットのマッピング", 第26回 Visual Computing (VC 2018), 山形, 2018年6月</li>
-              <li><span class="fa fa-square-o fa-fw"></span> <strong>北直樹</strong>, 宮田一乘, "任意の色数のカラーパレット評価および追加色提案手法", Visual Computing/グラフィックスとCAD合同シンポジウム 2016, 東京, 2016年6月</li>
-              <li><span class="fa fa-square-o fa-fw"></span> <strong>北直樹</strong>, 宮田一乘, "3D小石モザイクの生成手法", 第10回NICOGRAPH春季大会予稿集, II-6, 2011年3月 <span class=award>最優秀論文賞</span></li>
-              <li><span class="fa fa-square-o fa-fw"></span> <strong>北直樹</strong>, 宮田一乘, "本棚シーンのルールベール生成", Visual Computing/グラフィックスとCAD合同シンポジウム 2010, #17, 神奈川, 2010年6月</li>
-              <li><span class="fa fa-square-o fa-fw"></span> <strong>北直樹</strong>, 宮田一乘, "ルールベースの図書館シーンの自動生成", 第9回NICOGRAPH春季大会 論文&amp;アート部門コンテスト予稿集 SII-2, 東京, 2010年3月</li>
-              <li><span class="fa fa-square-o fa-fw"></span> 石橋賢, Toni Da Luz, Remy Eynard, <strong>北直樹</strong>, 姜南, 瀬木宏, 寺田圭祐, 宮田一乘, "スパイダーヒーロー：張力提示システムを導入したVRアプリケーション", INTERACTION 2010, PB21, 東京, 2010年3月</li>
+        <!-- Projects -->
+        <section class="mt-10">
+            <h2 class="font-bold text-xl md:text-2xl">Projects</h2>
+
+            <div class="mt-5 flex flex-col md:flex-row md:items-center md:justify-between">
+                <img src="projects/PaletteBasedImageSearch/representative.webp" alt="" class="w-full md:w-1/4 object-cover rounded-lg" loading="lazy">
+                <div class="mt-4 md:mt-0 md:ml-6 md:w-3/4">
+                    <h4 class="font-bold text-lg md:text-xl">Palette-based Image Search with Color Weights</h4>
+                    <p class="text-sm md:text-base"><strong>Naoki Kita</strong>, Shiori Kawasaki, Takafumi Saito</p>
+                    <p class="text-sm md:text-base italic">SIGGRAPH Asia 2022 Posters</p>
+                    <a href="https://doi.org/10.1145/3550082.3564203" class="text-blue-500 text-sm md:text-base bg-gray-200 px-2 py-1 rounded">DOI</a>
+                </div>
+            </div>
+
+            <div class="mt-5 flex flex-col md:flex-row md:items-center md:justify-between">
+                <img src="projects/ProcCrystal/representative.webp" alt="" class="w-full md:w-1/4 object-cover rounded-lg" loading="lazy">
+                <div class="mt-4 md:mt-0 md:ml-6 md:w-3/4">
+                    <h4 class="font-bold text-lg md:text-xl">Procedural Modeling of Crystal Clusters</h4>
+                    <p class="text-sm md:text-base"><strong>Naoki Kita</strong>, Satoshi Tsukii, Miwako Tsuru</p>
+                    <p class="text-sm md:text-base italic">SIGGRAPH Asia 2022 Posters</p>
+                    <a href="https://doi.org/10.1145/3550082.3564165" class="text-blue-500 text-sm md:text-base bg-gray-200 px-2 py-1 rounded">DOI</a>
+                </div>
+            </div>
+
+            <div class="mt-5 flex flex-col md:flex-row md:items-center md:justify-between">
+                <img src="projects/PolyominoPuzzles/representative.webp" alt="" class="w-full md:w-1/4 object-cover rounded-lg" loading="lazy">
+                <div class="mt-4 md:mt-0 md:ml-6 md:w-3/4">
+                    <h4 class="font-bold text-lg md:text-xl">Computational Design of Polyomino Puzzles</h4>
+                    <p class="text-sm md:text-base"><strong>Naoki Kita</strong>, Kazunori Miyata</p>
+                    <p class="text-sm md:text-base italic">The Visual Computer (CGI 2020)</p>
+                    <p class="mt-2 text-sm md:text-base">
+                        <a href="projects/PolyominoPuzzles/index.html" class="text-blue-500 text-sm md:text-base bg-gray-200 px-2 py-1 rounded">Project page</a>
+                        <a href="https://dx.doi.org/10.1007/s00371-020-01968-5" class="text-blue-500 text-sm md:text-base bg-gray-200 px-2 py-1 rounded">DOI</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="mt-5 flex flex-col md:flex-row md:items-center md:justify-between">
+                <img src="projects/CentrifugalPuzzles/representative.webp" alt="" class="w-full md:w-1/4 object-cover rounded-lg" loading="lazy">
+                <div class="mt-4 md:mt-0 md:ml-6 md:w-3/4">
+                    <h4 class="font-bold text-lg md:text-xl">Computational Design of Generalized Centrifugal Puzzles</h4>
+                    <p class="text-sm md:text-base"><strong>Naoki Kita</strong>, Takafumi Saito</p>
+                    <p class="text-sm md:text-base italic">Computers & Graphics (SMI 2020)</p>
+                    <p class="mt-2 text-sm md:text-base">
+                        <a href="projects/CentrifugalPuzzles/index.html" class="text-blue-500 text-sm md:text-base bg-gray-200 px-2 py-1 rounded">Project page</a>
+                        <a href="https://doi.org/10.1016/j.cag.2020.05.005" class="text-blue-500 text-sm md:text-base bg-gray-200 px-2 py-1 rounded">DOI</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="mt-5 flex flex-col md:flex-row md:items-center md:justify-between">
+                <img src="projects/SphericalMapping/representative.webp" alt="" class="w-full md:w-1/4 object-cover rounded-lg" loading="lazy">
+                <div class="mt-4 md:mt-0 md:ml-6 md:w-3/4">
+                    <h4 class="font-bold text-lg md:text-xl">Mapping Two-Dimensional Plots to a Spherical Surface using Elliptical Grid Mapping</h4>
+                    <p class="text-sm md:text-base"><strong>Naoki Kita</strong>, Grégoire Cliquet, Kazunori Miyata</p>
+                    <p class="text-sm md:text-base italic">Graphical Models (CVM 2020)</p>
+                    <p class="mt-2 text-sm md:text-base">
+                        <a href="projects/SphericalMapping/index.html" class="text-blue-500 text-sm md:text-base bg-gray-200 px-2 py-1 rounded">Project page</a>
+                        <a href="https://doi.org/10.1016/j.gmod.2020.101067" class="text-blue-500 text-sm md:text-base bg-gray-200 px-2 py-1 rounded">DOI</a>
+                        <a href="projects/SphericalMapping/SphericalMapping_cvm2020.pdf" class="text-blue-500 text-sm md:text-base bg-gray-200 px-2 py-1 rounded">PDF (Author's version, 12.7 MB)</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="mt-5 flex flex-col md:flex-row md:items-center md:justify-between">
+                <img src="projects/MagicSheet/representative.webp" alt="" class="w-full md:w-1/4 object-cover rounded-lg" loading="lazy">
+                <div class="mt-4 md:mt-0 md:ml-6 md:w-3/4">
+                    <h4 class="font-bold text-lg md:text-xl">Magic Sheet: Visual Cryptography with Common Shares</h4>
+                    <p class="text-sm md:text-base"><strong>Naoki Kita</strong>, Kazunori Miyata</p>
+                    <p class="text-sm md:text-base italic">Computational Visual Media (CVM 2018)</p>
+                    <p class="mt-2 text-sm md:text-base">
+                        <a href="projects/MagicSheet/index.html" class="text-blue-500 text-sm md:text-base bg-gray-200 px-2 py-1 rounded">Project page</a>
+                        <a href="https://dx.doi.org/10.1007/s41095-018-0108-x" class="text-blue-500 text-sm md:text-base bg-gray-200 px-2 py-1 rounded">DOI</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="mt-5 flex flex-col md:flex-row md:items-center md:justify-between">
+                <img src="projects/CubeArt/representative.webp" alt="" class="w-full md:w-1/4 object-cover rounded-lg" loading="lazy">
+                <div class="mt-4 md:mt-0 md:ml-6 md:w-3/4">
+                    <h4 class="font-bold text-lg md:text-xl">Cube Art</h4>
+                    <p class="text-sm md:text-base"><strong>Naoki Kita</strong>, Kazunori Miyata</p>
+                    <p class="text-sm md:text-base italic">SIGGRAPH Asia 2016 Posters</p>
+                    <p class="mt-2 text-sm md:text-base">
+                        <a href="projects/CubeArt/index.html" class="text-blue-500 text-sm md:text-base bg-gray-200 px-2 py-1 rounded">Project page</a>
+                        <a href="https://dx.doi.org/10.1145/3005274.3005305" class="text-blue-500 text-sm md:text-base bg-gray-200 px-2 py-1 rounded">DOI</a>
+                        <a href="projects/CubeArt/CubeArt_siga16.pdf" class="text-blue-500 text-sm md:text-base bg-gray-200 px-2 py-1 rounded">PDF (Author's version, 16.4 MB)</a>
+                        <a href="http://www.saiensu.co.jp/?page=book_details&ISBN=4910054690460&YEAR=2016" target="_blank" class="text-blue-500 text-sm md:text-base bg-gray-200 px-2 py-1 rounded">Cover (Japanese Science Magazine)</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="mt-5 flex flex-col md:flex-row md:items-center md:justify-between">
+                <img src="projects/ColorPalette/representative.webp" alt="" class="w-full md:w-1/4 object-cover rounded-lg" loading="lazy">
+                <div class="mt-4 md:mt-0 md:ml-6 md:w-3/4">
+                    <h4 class="font-bold text-lg md:text-xl">Aesthetic Rating and Color Suggestion for Color Palettes</h4>
+                    <p class="text-sm md:text-base"><strong>Naoki Kita</strong>, Kazunori Miyata</p>
+                    <p class="text-sm md:text-base italic">Computer Graphics Forum (Pacific Graphics 2016)</p>
+                    <p class="mt-2 text-sm md:text-base">
+                        <a href="projects/ColorPalette/index.html" class="text-blue-500 text-sm md:text-base bg-gray-200 px-2 py-1 rounded">Project page</a>
+                        <a href="https://dx.doi.org/10.1111/cgf.13010" class="text-blue-500 text-sm md:text-base bg-gray-200 px-2 py-1 rounded">DOI</a>
+                        <a href="projects/ColorPalette/ColorPalette_pg2016.pdf" class="text-blue-500 text-sm md:text-base bg-gray-200 px-2 py-1 rounded">PDF (Author's version, 11.6 MB)</a>
+                        <a href="projects/ColorPalette/ColorPalette_pg2016_supplemental_material.pdf" class="text-blue-500 text-sm md:text-base bg-gray-200 px-2 py-1 rounded">Supplemental Material (487 KB)</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="mt-5 flex flex-col md:flex-row md:items-center md:justify-between">
+                <img src="projects/ElementPattern/representative.webp" alt="" class="w-full md:w-1/4 object-cover rounded-lg" loading="lazy">
+                <div class="mt-4 md:mt-0 md:ml-6 md:w-3/4">
+                    <h4 class="font-bold text-lg md:text-xl">Multi-class Anisotropic Blue Noise Sampling for Discrete Element Pattern Generation</h4>
+                    <p class="text-sm md:text-base"><strong>Naoki Kita</strong>, Kazunori Miyata</p>
+                    <p class="text-sm md:text-base italic">The Visual Computer (CGI'16)</p>
+                    <p class="mt-2 text-sm md:text-base">
+                        <a href="projects/ElementPattern/index.html" class="text-blue-500 text-sm md:text-base bg-gray-200 px-2 py-1 rounded">Project page</a>
+                        <a href="https://dx.doi.org/10.1007/s00371-016-1248-6" class="text-blue-500 text-sm md:text-base bg-gray-200 px-2 py-1 rounded">DOI</a>
+                        <a href="projects/ElementPattern/supplemental.pdf" class="text-blue-500 text-sm md:text-base bg-gray-200 px-2 py-1 rounded">Supplemental Material (16.1 MB)</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="mt-5 flex flex-col md:flex-row md:items-center md:justify-between">
+                <img src="projects/PebbleMosaic/representative.webp" alt="" class="w-full md:w-1/4 object-cover rounded-lg" loading="lazy">
+                <div class="mt-4 md:mt-0 md:ml-6 md:w-3/4">
+                    <h4 class="font-bold text-lg md:text-xl">Interactive procedural modeling of pebble mosaics</h4>
+                    <p class="text-sm md:text-base"><strong>Naoki Kita</strong>, Kazunori Miyata</p>
+                    <p class="text-sm md:text-base italic">SIGGRAPH Asia 2011 Sketches</p>
+                    <p class="mt-2 text-sm md:text-base">
+                        <a href="https://dx.doi.org/10.1145/2077378.2077422" class="text-blue-500 text-sm md:text-base bg-gray-200 px-2 py-1 rounded">DOI</a>
+                        <a href="projects/PebbleMosaic/pebble_mosaic_siga2011.pdf" class="text-blue-500 text-sm md:text-base bg-gray-200 px-2 py-1 rounded">PDF (Author's version, 5.6 MB)</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="mt-5 flex flex-col md:flex-row md:items-center md:justify-between">
+                <img src="projects/LibraryScene/representative.webp" alt="" class="w-full md:w-1/4 object-cover rounded-lg" loading="lazy">
+                <div class="mt-4 md:mt-0 md:ml-6 md:w-3/4">
+                    <h4 class="font-bold text-lg md:text-xl">A rule-based method for generating bookshelf models</h4>
+                    <p class="text-sm md:text-base"><strong>Naoki Kita</strong>, Kazunori Miyata</p>
+                    <p class="text-sm md:text-base italic">SIGGRAPH Asia 2010 Posters</p>
+                    <p class="mt-2 text-sm md:text-base">
+                        <a href="https://dx.doi.org/10.1145/1900354.1900394" class="text-blue-500 text-sm md:text-base bg-gray-200 px-2 py-1 rounded">DOI</a>
+                        <a href="projects/LibraryScene/library_scene_siga2010.pdf" class="text-blue-500 text-sm md:text-base bg-gray-200 px-2 py-1 rounded">PDF (Author's version, 2.4 MB)</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="mt-5 flex flex-col md:flex-row md:items-center md:justify-between">
+                <img src="projects/SpiderHero/representative.webp" alt="" class="w-full md:w-1/4 object-cover rounded-lg" loading="lazy">
+                <div class="mt-4 md:mt-0 md:ml-6 md:w-3/4">
+                    <h4 class="font-bold text-lg md:text-xl">Spider Hero: A VR application using pulling force feedback system</h4>
+                    <p class="text-sm md:text-base">Ken Ishibashi, Toni Da Luz, Remmy Eynard, <strong>Naoki Kita</strong>, Nan Jian, Hiroshi Segi, Keisuke Terada, Kyohei Fujita, Kazunori Miyata</p>
+                    <p class="text-sm md:text-base italic">VRCAI 2009</p>
+                    <p class="mt-2 text-sm md:text-base">
+                        <a href="https://dx.doi.org/10.1145/1670252.1670294" class="text-blue-500 text-sm md:text-base bg-gray-200 px-2 py-1 rounded">DOI</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Publications -->
+        <section class="mt-10">
+            <h2 class="font-bold text-xl md:text-2xl toggle-publications cursor-pointer">Selected Publications <span class="toggle"></span></h2>
+        
+            <!-- International Journals -->
+            <h3 class="font-bold text-lg md:text-xl mt-4 publication-content">International Journals</h3>
+            <div class="mt-5 flex flex-col md:flex-row md:items-center md:justify-between publication-content">
+                <div class="mt-4 md:mt-0 md:ml-6 md:w-3/4">
+                    <h4 class="font-bold text-lg md:text-xl">Computational design of polyomino puzzles</h4>
+                    <p class="text-sm md:text-base"><strong>Naoki Kita</strong>, Kazunori Miyata</p>
+                    <p class="text-sm md:text-base italic">The Visual Computer, Vol.37, No.4, pp.777--787 (2021)</p>
+                    <a href="https://dx.doi.org/10.1007/s00371-020-01968-5" class="text-blue-500 text-sm md:text-base bg-gray-200 px-2 py-1 rounded">DOI</a>
+                </div>
+            </div>
+
+            <div class="mt-5 flex flex-col md:flex-row md:items-center md:justify-between publication-content">
+                <div class="mt-4 md:mt-0 md:ml-6 md:w-3/4">
+                    <h4 class="font-bold text-lg md:text-xl">Computational design of generalized centrifugal puzzles</h4>
+                    <p class="text-sm md:text-base"><strong>Naoki Kita</strong>, Takafumi Saito</p>
+                    <p class="text-sm md:text-base italic">Computers & Graphics, Vol.90, pp.21--28 (2020)</p>
+                    <a href="https://doi.org/10.1016/j.cag.2020.05.005" class="text-blue-500 text-sm md:text-base bg-gray-200 px-2 py-1 rounded">DOI</a>
+                </div>
+            </div>
+
+            <div class="mt-5 flex flex-col md:flex-row md:items-center md:justify-between publication-content">
+                <div class="mt-4 md:mt-0 md:ml-6 md:w-3/4">
+                    <h4 class="font-bold text-lg md:text-xl">Mapping two-dimensional plots to a spherical surface using elliptical grid mapping</h4>
+                    <p class="text-sm md:text-base"><strong>Naoki Kita</strong>, Grégoire Cliquet, Kazunori Miyata</p>
+                    <p class="text-sm md:text-base italic">Graphical Models, Vol.109, 101067 (2020)</p>
+                    <a href="https://doi.org/10.1016/j.gmod.2020.101067" class="text-blue-500 text-sm md:text-base bg-gray-200 px-2 py-1 rounded">DOI</a>
+                </div>
+            </div>
+
+            <div class="mt-5 flex flex-col md:flex-row md:items-center md:justify-between publication-content">
+                <div class="mt-4 md:mt-0 md:ml-6 md:w-3/4">
+                    <h4 class="font-bold text-lg md:text-xl">Integration of machine learning and open access geospatial data for land cover mapping</h4>
+                    <p class="text-sm md:text-base">Mohammad Mardani, Hossein Mardani, Lorenzo De Simone, Samuel Varas, <strong>Naoki Kita</strong>, Takafumi Saito </p>
+                    <p class="text-sm md:text-base italic">Remote Sensing, Vol.11, No.16, 1907 (2019)</p>
+                    <a href="https://doi.org/10.3390/rs11161907" class="text-blue-500 text-sm md:text-base bg-gray-200 px-2 py-1 rounded">DOI</a>
+                </div>
+            </div>
+            
+            <div class="mt-5 flex flex-col md:flex-row md:items-center md:justify-between publication-content">
+                <div class="mt-4 md:mt-0 md:ml-6 md:w-3/4">
+                    <h4 class="font-bold text-lg md:text-xl">Magic sheets: visual cryptography with common shares</h4>
+                    <p class="text-sm md:text-base"><strong>Naoki Kita</strong>, Kazunori Miyata</p>
+                    <p class="text-sm md:text-base italic">Computational Visual Media, Vol.4, No.2, pp.185--195 (2018)</p>
+                    <a href="https://dx.doi.org/10.1007/s41095-018-0108-x" class="text-blue-500 text-sm md:text-base bg-gray-200 px-2 py-1 rounded">DOI</a>
+                </div>
+            </div>
+
+            <div class="mt-5 flex flex-col md:flex-row md:items-center md:justify-between publication-content">
+                <div class="mt-4 md:mt-0 md:ml-6 md:w-3/4">
+                    <h4 class="font-bold text-lg md:text-xl">Aesthetic rating and color suggestion for color palettes</h4>
+                    <p class="text-sm md:text-base"><strong>Naoki Kita</strong>, Kazunori Miyata</p>
+                    <p class="text-sm md:text-base italic">Computer Graphics Forum, Vol.35, No.7, pp.127--136 (2016)</p>
+                    <a href="https://dx.doi.org/10.1111/cgf.13010" class="text-blue-500 text-sm md:text-base bg-gray-200 px-2 py-1 rounded">DOI</a>
+                </div>
+            </div>
+
+            <div class="mt-5 flex flex-col md:flex-row md:items-center md:justify-between publication-content">
+                <div class="mt-4 md:mt-0 md:ml-6 md:w-3/4">
+                    <h4 class="font-bold text-lg md:text-xl">Multi-class anisotropic blue noise sampling for discrete element pattern generation</h4>
+                    <p class="text-sm md:text-base"><strong>Naoki Kita</strong>, Kazunori Miyata</p>
+                    <p class="text-sm md:text-base italic">The Visual Computer, Springer, Vol.32, No.6, pp.1035--1044 (2016)</p>
+                    <a href="https://dx.doi.org/10.1007/s00371-016-1248-6" class="text-blue-500 text-sm md:text-base bg-gray-200 px-2 py-1 rounded">DOI</a>
+                </div>
+            </div>
+    
+            <!-- Domestic Journals -->
+            <h3 class="font-bold text-lg md:text-xl mt-4 publication-content">Domestic Journals</h3>
+            <div class="mt-5 flex flex-col md:flex-row md:items-center md:justify-between publication-content">
+                <div class="mt-4 md:mt-0 md:ml-6 md:w-3/4">
+                    <h4 class="font-bold text-lg md:text-xl">模様の連続性を担保した包装紙デザインの自動生成</h4>
+                    <p class="text-sm md:text-base">菅原万梨夏, 田村崚, <strong>北直樹</strong>, 斎藤隆文</p>
+                    <p class="text-sm md:text-base italic">画像電子学会誌, Vol.50, No.3, pp.419--424 (2021)</p>
+                </div>
+            </div>
+
+            <div class="mt-5 flex flex-col md:flex-row md:items-center md:justify-between publication-content">
+                <div class="mt-4 md:mt-0 md:ml-6 md:w-3/4">
+                    <h4 class="font-bold text-lg md:text-xl">グラフィックデザインのためのセマンティクスを考慮した色候補生成</h4>
+                    <p class="text-sm md:text-base">玉置尚吾, <strong>北直樹</strong>, 斎藤隆文</p>
+                    <p class="text-sm md:text-base italic">画像電子学会誌, Vol.50, No.2, pp.277--283 (2021)</p>
+                </div>
+            </div>
+
+            <div class="mt-5 flex flex-col md:flex-row md:items-center md:justify-between publication-content">
+                <div class="mt-4 md:mt-0 md:ml-6 md:w-3/4">
+                    <h4 class="font-bold text-lg md:text-xl">モアレを用いた多彩な動き生成</h4>
+                    <p class="text-sm md:text-base">安部龍馬, <strong>北直樹</strong>, 斎藤隆文</p>
+                    <p class="text-sm md:text-base italic">画像電子学会誌, Vol.50, No.2, pp.265--271 (2021)</p>
+                </div>
+            </div>
+
+            <div class="mt-5 flex flex-col md:flex-row md:items-center md:justify-between publication-content">
+                <div class="mt-4 md:mt-0 md:ml-6 md:w-3/4">
+                    <h4 class="font-bold text-lg md:text-xl">没入的VRデータ可視化のための2次元プロットの球面マッピング</h4>
+                    <p class="text-sm md:text-base"><strong>北直樹</strong>, Grégoire Cliquet, 宮田一乘</p>
+                    <p class="text-sm md:text-base italic">画像電子学会誌, Vol.47, No.4, pp.425--432 (2018)</p>
+                </div>
+            </div>
+
+            <div class="mt-5 flex flex-col md:flex-row md:items-center md:justify-between publication-content">
+                <div class="mt-4 md:mt-0 md:ml-6 md:w-3/4">
+                    <h4 class="font-bold text-lg md:text-xl">スパイダーヒーロー: 張力提示によるエンタテインメントVR</h4>
+                    <p class="text-sm md:text-base">石橋賢, Toni Da Luz, Remy Eynard, <strong>北直樹</strong>, 姜南, 瀬木宏, 寺田圭祐, 藤田恭平, 宮田一乘</p>
+                    <p class="text-sm md:text-base italic">映像情報メディア学会誌, Vol.66, No.1, pp.J11--J16 (2012)</p>
+                </div>
+            </div>
+            <p class="mt-4">Check out my complete list of publications on <a href="https://scholar.google.at/citations?hl=en&user=_sCKWwoAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" class="text-blue-500">Google Scholar</a> or <a href="https://researchmap.jp/nkita/" target="_blank" class="text-blue-500">researchmap</a>.</p>
+        </section>
+
+        <!-- Awards -->
+        <section class="mt-10">
+            <h2 class="font-bold text-xl md:text-2xl">Awards</h2>
+
+            <ul class="list-disc ml-5">
+                <li>NICOGRAPH賞, NICOGRAPH 2022, 2022</li>
+                <li>優秀論文賞（ショートペーパー）, NICOGRAPH 2022, 2022</li>
+                <li>優秀研究発表賞, Visual Computing 2020 (VC2020), 2020</li>
+                <li>Outstanding Performance Award in the doctoral program, JAIST, 2019</li>
+                <li>Excellent Poster Award, JAIST World Conference 2018</li>
+                <li>Outstanding Poster Award, JAIST HLD International Symposium 2016</li>
+                <li>Outstanding Performance Award in the master program, JAIST, 2011</li>
+                <li>最優秀論文賞, 第10回NICOGRAPH春季大会, 2011</li>
+                <li>Campus Genius Award SILVER (Interactive), 15th Campus Genius Award, 2010</li>
             </ul>
+        </section>
 
-            <!-- <h3>国内会議（ポスター発表・査読有）</h3>
-            <ul>
-              <li><span class="fa fa-square-o fa-fw"></span> <strong>北直樹</strong>, 宮田一乘, "Cube Art", Visual Computing/グラフィックスとCAD合同シンポジウム 2013, #40, 青森, 2013年6月</li>
-              <li><span class="fa fa-square-o fa-fw"></span> <strong>北直樹</strong>, 宮田一乘, "Poisson-Disk Samplingを用いた離散エレメントテクスチャ生成", Visual Computing/グラフィックスとCAD合同シンポジウム 2012, #27, 東京, 2012年6月</li>
-            </ul> -->
+        <!-- Funding Sources -->
+        <section class="mt-10">
+            <h2 class="font-bold text-xl md:text-2xl">Funding Sources</h2>
 
-            <!-- <h3>国内会議（口頭発表・査読無）</h3>
-            <ul>
-              <li><span class="fa fa-square-o fa-fw"></span> <strong>北直樹</strong>, 宮田一乘, "Perceptually-based Reduction of Colors", Visual Computingワークショップ in 湯涌温泉, 2015, 石川, 2015年11月</li>
-            </ul> -->
+            <ul class="list-disc ml-5">
+                <li>JSPS Grant-in-Aid for Young Scientists, Apr 2020 - Mar 2023</li>
+                <li>JSPS Grant-in-Aid for Research Activity Start-up, Aug 2019 - Mar 2021</li>
+                <li>JAIST Research Grant (Fundamental Research) 2018, Jul 2018 - Mar 2019</li>
+                <li>JSPS Fellowship for Young Scientists (DC2), Apr 2017 - Mar 2019</li>
+                <li>JAIST Grant for Off-Campus Research, Feb 2017 - Nov 2017</li>
+                <li>JAIST Doctoral Research Fellowship (DRF), Apr 2016 - Mar 2017</li>
+                <li>The Exploratory IT Human Resources Project (THE MITOH Program), Information Technology Promotion Agency Japan (IPA), Feb 2012 - Aug 2012</li>
+            </ul>
+        </section>
+    </div>
 
-            <!-- <h3>解説など</h3>
-            <ul>
-              <li><span class="fa fa-square-o fa-fw"></span> <strong>北直樹</strong>, 宮田一乘, "カラーパレットの美的評価モデルの構築と追加色の提案手法", 画像ラボ, Vol.28, No.12, pp.14--21, 日本工業出版, (2017)</li>
-              <li><span class="fa fa-square-o fa-fw"></span> 石橋賢, 宮田一乘, Toni Da Luz, Remy Eynard, <strong>北直樹</strong>, 姜南, 瀬木宏, 寺田圭祐, 藤田恭平, "スパイダーヒーロー", 画像ラボ, Vol.23, No.7, pp.22--28, 日本工業出版, (2012)</li>
-            </ul> -->
-
-          </div>
-      </div>
-
-    </section>
-
-    <section> <!-- Awards -->
-      <h2>Awards</h2>
-
-      <ul>
-        <li><span class="fa fa-star fa-fw"></span> NICOGRAPH賞, NICOGRAPH 2022, 2022</li>
-        <li><span class="fa fa-star fa-fw"></span> 優秀論文賞（ショートペーパー）, NICOGRAPH 2022, 2022</li>
-        <li><span class="fa fa-star fa-fw"></span> 優秀研究発表賞, Visual Computing 2020 (VC2020), 2020</li>
-        <li><span class="fa fa-star fa-fw"></span> Outstanding Performance Award in the doctoral program, JAIST, 2019</li>
-        <li><span class="fa fa-star fa-fw"></span> Excellent Poster Award, JAIST World Conference 2018</li>
-        <li><span class="fa fa-star fa-fw"></span> Outstanding Poster Award, JAIST HLD International Symposium 2016</li>
-        <li><span class="fa fa-star fa-fw"></span> Outstanding Performance Award in the master program, JAIST, 2011</li>
-        <li><span class="fa fa-star fa-fw"></span> 最優秀論文賞, 第10回NICOGRAPH春季大会, 2011</li>
-        <li><span class="fa fa-star fa-fw"></span> Campus Genius Award SILVER (Interactive), 15th Campus Genius Award, 2010</li>
-      </ul>
-    </section> <!-- /Awards -->
-
-    <section> <!-- Funding Sources -->
-      <h2>Funding Sources</h2>
-
-      <ul>
-        <li><span class="fa fa-square fa-fw"></span> JSPS Grant-in-Aid for Young Scientists, Apr 2020 - Mar 2023</li>
-        <li><span class="fa fa-square fa-fw"></span> JSPS Grant-in-Aid for Research Activity Start-up, Aug 2019 - Mar 2021</li>
-        <li><span class="fa fa-square fa-fw"></span> JAIST Research Grant (Fundamental Research) 2018, Jul 2018 - Mar 2019</li>
-        <li><span class="fa fa-square fa-fw"></span> JSPS Fellowship for Young Scientists (DC2), Apr 2017 - Mar 2019</li>
-        <li><span class="fa fa-square fa-fw"></span> JAIST Grant for Off-Campus Research, Feb 2017 - Nov 2017</li>
-        <li><span class="fa fa-square fa-fw"></span> JAIST Doctoral Research Fellowship (DRF), Apr 2016 - Mar 2017</li>
-        <li><span class="fa fa-square fa-fw"></span> The Exploratory IT Human Resources Project (THE MITOH Program), Information Technology Promotion Agency Japan (IPA), Feb 2012 - Aug 2012</li>
-      </ul>
-    </section>
-
-  </div> <!-- /row -->
-</div> <!-- /container -->
-<footer>
-<div class="container">
-<hr>
-<p>Copyright &copy; Naoki Kita All rights reserved (Last updated: Jul 5, 2023)</p>
-</div>
-</footer>
+    <footer class="mt-20 border-t py-5 text-center">
+        <p class="text-gray-600">Copyright &copy; Naoki Kita All rights reserved.</p>
+    </footer>
+  
+    <script>
+        document.querySelector('.toggle-publications').addEventListener('click', function() {
+            this.querySelector('.toggle').classList.toggle('show');
+            document.querySelectorAll('.publication-content').forEach(el => el.classList.toggle('show'));
+        });
+    </script>
 </body>
+
 </html>

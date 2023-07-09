@@ -4,78 +4,67 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="title" content="Spherical Mapping">
+<meta name="title" content="Centrifugal Puzzles">
 <title>Centrifugal Puzzles</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-<link href="../../custom.css" rel="stylesheet">
-<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-<!--[if lt IE 9]>
-<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
-<![endif]-->
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-38577526-1"></script>
 <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-38577526-1');</script>
 </head>
-<body>
-<div class="container">
+<body class="antialiased font-sans">
 
-  <div class="row">
-    <div class="text-center">
-      <h2>Computational Design of Generalized Centrifugal Puzzles</h2>
-      <ul class="text-center authors" style="font-size: 13pt"> 
-        <li><a href="http://naokita.xyz">Naoki Kita</a><sup>†</sup></li>
-        <li>Takafumi Saito<sup>†</sup></li>
+<div class="container mx-auto p-5">
+
+  <div class="text-center">
+      <h2 class="text-3xl font-bold">Computational Design of Generalized Centrifugal Puzzles</h2>
+      <div class="flex justify-center text-lg mt-3 space-x-4"> 
+        <div><a href="http://naokita.xyz" class="text-blue-600">Naoki Kita</a><sup>†</sup></div>
+        <div>Takafumi Saito<sup>†</sup></div>
+      </div>
+      <ul class="text-center affiliation text-lg">
+        <li><sup>†</sup> Tokyo University of Agriculture and Technology</li>
       </ul>
-      <ul class="text-center affiliation" style="font-size: 13pt">
-        <li><sup>†</sup> <a href="https://www.tuat.ac.jp/en/">Tokyo University of Agriculture and Technology</a></li>
-        <br/><br/>
-        <a href="https://smi2020.sciencesconf.org/">SMI 2020</a> 
-        </p>
-      <img src="teaser.jpg" alt="teaser image" width="100%" style="border: 0">
+      <p class="mt-3"><a href="https://smi2020.sciencesconf.org/" class="text-blue-600">SMI 2020</a></p>
+      <img src="teaser.jpg" alt="teaser image" class="mt-5 mx-auto w-full h-auto" loading="lazy">
   </div>
 
   <div>
-    <section>
-      <h2>Abstract</h2>
-      <span style="font-size: 13pt">
+    <section class="mt-10">
+      <h2 class="text-2xl font-bold">Abstract</h2>
+      <span class="text-lg mt-3 block">
         Mechanical puzzles have fascinated many people for a long time. While some puzzles require complex procedures to solve, there are puzzles that can be solved easily if the solver understands the underlying mechanism. In this paper, we focus on mechanical puzzles that can be solved by spin such that centrifugal force is applied to the internal mechanical core to unlock the locked state. While traditional centrifugal puzzles are limited to simple shapes, we propose a computational design method to generalize such puzzles by embedding the mechanical core into 3D models. We parameterize the internal core mechanism and optimize the design under several design constraints, and we generate a support structure that helps users solve puzzles easily because generalized puzzles cannot always be spun steadily and easily due to complex surfaces and non-flat contact areas. Additionally, we embed multiple cores into a model. To solve a multi-core puzzle, the user must follow certain orders to unlock each locking mechanism. We fabricate a variety of designed puzzles and demonstrate whether they can be physically unlocked.
       </span>
     </section>
 
-    <section>
-        <h2>Results</h2>
-  
-        <div class="thumbnail with-caption">
-          <img src="results/lowpolytree.jpg" alt="Fabrication results" width="100%" style="border: 0">
+    <section class="mt-10">
+        <h2 class="text-2xl font-bold">Results</h2>
+        <div class="mt-5">
+          <img src="results/lowpolytree.jpg" alt="Fabrication results" class="w-full h-auto" loading="lazy">
         </div>
-
-        <div class="thumbnail with-caption">
-          <img src="results/results.png" alt="Another fabrication results" width="100%" style="border: 0">
+        <div class="mt-5">
+          <img src="results/results.png" alt="Another fabrication results" class="w-full h-auto" loading="lazy">
         </div>
-        
     </section>
 
-    <section>
-      <h2>Links</h2>
-      <span style="font-size: 13pt">
+    <section class="mt-10">
+      <h2 class="text-2xl font-bold">Links</h2>
+      <span class="text-lg mt-3 block">
         <ul>
-          <li><i class="fas fa-link"></i> <a href="https://doi.org/10.1016/j.cag.2020.05.005">DOI</a></li>
-          <li><i class="fas fa-link"></i> <a href="supplemental_video.mp4">Supplemental video (69 MB)</a></li>
+          <li><a href="https://doi.org/10.1016/j.cag.2020.05.005" class="text-blue-600">DOI</a></li>
+          <li><a href="supplemental_video.mp4" class="text-blue-600">Supplemental video (69 MB)</a></li>
         </ul>
       </span>
     </section>
 
-    <section>
-      <h2>Acknowledgements</h2>
-      <span style="font-size: 13pt">
+    <section class="mt-10">
+      <h2 class="text-2xl font-bold">Acknowledgements</h2>
+      <span class="text-lg mt-3 block">
         This work was supported by JSPS KAKENHI Grant number 19K24338.
       </span>
     </section>
 
-    <section>
-      <h2>Bibtex</h2>
-      <span style="font-size: 13pt">
+    <section class="mt-10">
+      <h2 class="text-2xl font-bold">Bibtex</h2>
+      <span class="text-lg mt-3 block">
         <pre>
 @article{KITA202021,
   title = "Computational design of generalized centrifugal puzzles",
@@ -88,19 +77,15 @@
   url = "http://www.sciencedirect.com/science/article/pii/S009784932030056X",
   author = "Naoki Kita and Takafumi Saito",
   keywords = "Computational design, Digital fabrication, Puzzles",
-  }
+}
         </pre>
       </span>
     </section>
-  
   </div>
 
-</div> <!-- /container -->
-<footer>
-<div class="container">
-<hr>
-<p>Copyright &copy; Naoki Kita All rights reserved (Last updated: Jun 3, 2020)</p>
 </div>
+<footer class="mt-20 border-t py-5 text-center">
+<p class="text-gray-600">Copyright &copy; Naoki Kita All rights reserved.</p>
 </footer>
 </body>
 </html>
